@@ -251,7 +251,7 @@ forward-zone:
         forward-addr: 208.67.222.222 # OpenDNS
         forward-addr: 216.146.35.35  # Dyn Public
         forward-addr: 216.146.36.36  # Dyn Public
-		forward-addr: 4.2.2.1        # Level 3 DNS
+        forward-addr: 4.2.2.1        # Level 3 DNS
         forward-addr: 4.2.2.2        # Level 3 DNS
 ```
 
@@ -306,6 +306,7 @@ ns2.omu.edu.tr  internet address = 193.140.28.7
 > omu.edu.tr
 Server:         127.0.0.1
 Address:        127.0.0.1#53
+
 Non-authoritative answer:
 omu.edu.tr
         origin = ns1.omu.edu.tr
@@ -318,6 +319,7 @@ omu.edu.tr
 omu.edu.tr      nameserver = ns1.omu.edu.tr.
 omu.edu.tr      nameserver = ns2.omu.edu.tr.
 omu.edu.tr      mail exchanger = 5 mx.omu.edu.tr.
+
 Authoritative answers can be found from:
 ns1.omu.edu.tr  internet address = 193.140.28.6
 ns2.omu.edu.tr  internet address = 193.140.28.7
