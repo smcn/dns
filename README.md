@@ -31,7 +31,11 @@ Yazılımlar minimal kurulum yapılmış OpenBSD üzerinde yapılandırılacakt�
 
 ![kampüs](https://github.com/smcn/dns/blob/master/nsd.JPG)
 
-Zone transfer için anahtar oluşturuluyor
+### Ayarlar
+
+Kurulum OpenBSD 6.2 üzerine yapıldı.
+
+Zone transfer için anahtar oluşturuluyor...
 
 ```
 # echo "secret" | sha256 –b
