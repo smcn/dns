@@ -32,7 +32,7 @@ Yazılımlar minimal kurulum yapılmış OpenBSD üzerinde yapılandırılacakt�
 ![kampüs](https://github.com/smcn/dns/blob/master/nsd.JPG)
 
 | Sunucu    | ip           | Açıklama |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| -------------
 | NSD(master)      | 10.10.1.51 | 1. Dış DNS |
 | NSD(slave)      | 10.10.1.52 | 2. Dış DNS | 
 | 1. Unbound | 10.10.1.53 | 1. İç DNS |
