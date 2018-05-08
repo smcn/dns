@@ -123,7 +123,7 @@ NSD başlatma
 # rcctl -d start nsd
 ```
 
-Ayrıntılı log için nsd.conf, verbose değeri artırılmalı, 1-5
+Ayrıntılı log için nsd.conf, verbosity değeri artırılmalı, 1-5
 
 ```
 # tail –f /var/log/nsd.log
