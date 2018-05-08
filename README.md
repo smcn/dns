@@ -31,6 +31,13 @@ Yazılımlar minimal kurulum yapılmış OpenBSD üzerinde yapılandırılacakt�
 
 ![kampüs](https://github.com/smcn/dns/blob/master/nsd.JPG)
 
+| Sunucu    | ip           | 
+| ------------- |:-------------:| 
+| NSD(master)      | 10.10.1.51 | 
+| NSD(slave)      | 10.10.1.52 |  
+| 1. Unbound | 10.10.1.53 |
+| 2. Unbound | 10.10.1.54 |
+
 ### Ayarlar
 
 Kurulum OpenBSD 6.2 üzerine yapıldı.
@@ -42,6 +49,7 @@ Zone transfer için anahtar oluşturuluyor...
 s35QztzT4/H/ZPSvwEIghK5pQlPPOZMmho4Ho19KRfs=
 ```
 
+#### NSD(master)
 ```
 nano /var/nsd/etc/nsd.conf
 server:
@@ -130,6 +138,7 @@ Ayrıntılı log için nsd.conf, verbosity değeri artırılmalı, 1-5
 
 ```
 
+#### NSD(slave)
 ```
 # nano /var/nsd/etc/nsd.conf
 server:
@@ -204,7 +213,7 @@ Slave DNS ZONE kayıtlarını hafızasında veya binary olarak tutmakta, Master 
 # nano /var/unbound/etc/unbound.conf
 server:
      interface: 127.0.0.1
-     interface: 10.10.10.10
+     interface: 10.10.1.53
      do-ip6: no
      use-syslog: yes
      verbosity: 1
